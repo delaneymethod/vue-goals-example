@@ -6,6 +6,7 @@
     <section id="user-goal">
       <h2>My Course Goal</h2>
       <p>{{ courseGoal }}</p>
+      <p>Learn more <a v-bind:href="courseLink">about Vue</a></p>
     </section>
   </div>
 </template>
@@ -16,7 +17,8 @@ export default {
   components: {},
   data() {
     return {
-      courseGoal: 'Master Vue!'
+      courseGoal: 'Master Vue!',
+      courseLink: 'https://vuejs.org/'
     };
   }
 };
