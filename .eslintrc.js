@@ -1,16 +1,16 @@
 module.exports = {
-  'root': true,
-  'env': {
-    'node': true
-  },
-  'extends': [
-    'plugin:vue/recommended',
-    'eslint:recommended'
-  ],
-  'parserOptions': {
-    'parser': 'babel-eslint'
-  },
-  'rules': {
-    'indent': ['error', 2]
-  }
+	'root': true,
+	'env': {
+		'node': true
+	},
+	'extends': [
+		'plugin:vue/recommended',
+		'eslint:recommended'
+	],
+	'parserOptions': {
+		'parser': 'babel-eslint'
+	},
+	'rules': {
+		'vue/html-indent': 'off'
+	}
 };
