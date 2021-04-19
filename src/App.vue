@@ -9,10 +9,11 @@
 			<button v-on:click="incrementCounter">Increment Counter</button>
 			<p>Learn more <a :href="courseLink">about Vue</a></p>
 			<p>Counter {{ counter }}</p>
-			<input type="text" v-bind:value="name" v-on:input="setName"/>
+			<input type="text" :value="name" v-on:input="setName"/>
 			<input type="text" v-model="surname"/>
-			<button v-on:click="resetName">Reset Name</button>
-			<p>{{ name }}</p>
+			<button @click="resetName">Reset Name</button>
+			<p>Surname: {{ name }}</p>
+			<p>Full Name: {{ outputFullName }}</p>
 		</section>
 	</div>
 </template>
@@ -21,7 +22,18 @@
 export default {
 	name: 'App',
 	components: {},
-	computed: {},
+	watch: {
+		counter(latestValue) {
+			if (latestValue > 10) {
+				this.counter = 0;
+			}
+		}
+	},
+	computed: {
+		outputFullName() {
+			return this.name;
+		}
+	},
 	beforeMount() {
 	},
 	props: {},
