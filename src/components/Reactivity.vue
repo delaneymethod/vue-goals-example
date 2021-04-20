@@ -20,6 +20,30 @@ export default {
 		currentUserInput: '',
 		message: 'Vue is great!'
 	}),
+	beforeCreate() {
+		console.log('Lifecycle steps - #1 - beforeCreate');
+	},
+	created() {
+		console.log('Lifecycle steps - #2 - created');
+	},
+	beforeMount() {
+		console.log('Lifecycle steps - #3 - beforeMount');
+	},
+	mounted() {
+		console.log('Lifecycle steps - #4 - mounted');
+	},
+	beforeUpdate() {
+		console.log('Lifecycle steps - #5 - beforeUpdate');
+	},
+	updated() {
+		console.log('Lifecycle steps - #6 - updated');
+	},
+	beforeUnmount() {
+		console.log('Lifecycle steps - #7 - beforeUnmount');
+	},
+	unmounted() {
+		console.log('Lifecycle steps - #8 - unmounted');
+	},
 	methods: {
 		/*
 		saveInput(event) {
