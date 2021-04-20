@@ -17,6 +17,7 @@
 			<li
 				v-for="(goal, index) in goals"
 				:key="index"
+				@click="removeGoal(index)"
 			>
 				{{ goal }}
 			</li>
@@ -42,6 +43,9 @@ export default {
 	methods: {
 		addGoal() {
 			this.goals.push(this.enteredGoalValue);
+		},
+		removeGoal(index) {
+			this.goals.splice(index, 1);
 		}
 	}
 };
