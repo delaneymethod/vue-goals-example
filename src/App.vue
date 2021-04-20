@@ -3,13 +3,14 @@
 		<!--
 		<Binding />
 		<DynamicStyling />
-		-->
 		<Goals />
+		-->
+		<Reactivity />
 	</div>
 </template>
 
 <script type="text/babel">
-import Goals from '@/components/Goals';
+import Reactivity from './components/Reactivity';
 
 export default {
 	name: 'App',
@@ -17,8 +18,9 @@ export default {
 		/*
 		Binding,
 		DynamicStyling,
-		*/
 		Goals
+		*/
+		Reactivity
 	}
 };
 </script>
