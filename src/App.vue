@@ -1,18 +1,24 @@
 <template>
 	<div id="app">
-		<!--<Binding/>-->
-		<DynamicStyling/>
+		<!--
+		<Binding />
+		<DynamicStyling />
+		-->
+		<Goals />
 	</div>
 </template>
 
 <script type="text/babel">
-import DynamicStyling from '@/components/DynamicStyling';
+import Goals from '@/components/Goals';
 
 export default {
 	name: 'App',
 	components: {
-		//Binding,
-		DynamicStyling
+		/*
+		Binding,
+		DynamicStyling,
+		*/
+		Goals
 	}
 };
 </script>
