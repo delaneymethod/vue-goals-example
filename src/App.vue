@@ -1,7 +1,5 @@
 <template>
-	<div id="app">
-		<Badges />
-	</div>
+	<Badges />
 </template>
 
 <script>
