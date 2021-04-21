@@ -1,0 +1,23 @@
+<template>
+	<dialog open>
+		<slot />
+	</dialog>
+</template>
+
+<script>
+export default {
+	name: 'ErrorAlert'
+};
+</script>
+
+<style scoped>
+dialog {
+	margin: 0;
+	position: fixed;
+	top: 20vh;
+	left: 30%;
+	width: 40%;
+	background-color: #ffffff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+</style>
