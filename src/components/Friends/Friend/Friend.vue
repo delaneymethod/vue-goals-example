@@ -15,7 +15,22 @@
 <script>
 export default {
 	name: 'Friend',
-	props: ['name', 'phone', 'email', 'isFavorite'],
+	props: {
+		name: {
+			type: String,
+			required: true
+		},
+		phone: String,
+		email: String,
+		isFavorite: {
+			type: String,
+			required: false,
+			default: '0',
+			validator: function (value) {
+				return value === '1' || value === '0';
+			}
+		}
+	},
 	data() {
 		return {
 			detailsAreVisible: false,
@@ -40,14 +55,6 @@ export default {
 			}
 		}
 	}
-	/*,
-	props: {
-		friend: {
-			type: Object,
-			default: null
-		}
-	}
-	*/
 };
 </script>
 

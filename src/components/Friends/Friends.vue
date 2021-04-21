@@ -14,7 +14,6 @@
 				name="Julie Lorenz"
 				phone="09876 543 22"
 				email="julie@localhost.com"
-				is-favorite="0"
 			/>
 		</ul>
 	</section>
