@@ -13,26 +13,33 @@
 </template>
 
 <script>
+import BaseBadge from '@/components/Badges/BaseBadge';
+
 export default {
-	name: 'BadgeList'
+	name: 'BadgeList',
+	components: {
+		BaseBadge
+	}
 };
 </script>
 
-<style scoped>
-section h2 {
-	margin: 0.5rem 0;
-	color: #3a3a3a;
-}
+<style lang="scss" scoped>
+section {
+	h2 {
+		margin: 0.5rem 0;
+		color: #3a3a3a;
+	}
 
-ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-	flex-direction: row;
-}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-direction: row;
+	}
 
-li {
-	margin-right: 1rem;
+	li {
+		margin-right: 1rem;
+	}
 }
 </style>

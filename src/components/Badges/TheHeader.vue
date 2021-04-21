@@ -10,7 +10,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
 	width: 100%;
 	height: 5rem;
@@ -18,10 +18,10 @@ header {
 	justify-content: center;
 	align-items: center;
 	background-color: #14005e;
-}
 
-header h1 {
-	color: #ffffff;
-	margin: 0;
+	h1 {
+		color: #ffffff;
+		margin: 0;
+	}
 }
 </style>
