@@ -4,26 +4,21 @@
 		<Binding />
 		<DynamicStyling />
 		<Goals />
-		-->
 		<Reactivity />
+		-->
+		<Friends />
 	</div>
 </template>
 
-<script type="text/babel">
-import Reactivity from './components/Reactivity';
+<script>
+import Friends from '@/components/Friends/Friends';
 
 export default {
 	name: 'App',
 	components: {
-		/*
-		Binding,
-		DynamicStyling,
-		Goals
-		*/
-		Reactivity
+		Friends
 	}
 };
 </script>
 
-<style lang="scss">
-</style>
+<style scoped></style>

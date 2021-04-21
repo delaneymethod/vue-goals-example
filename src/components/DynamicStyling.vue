@@ -1,21 +1,13 @@
 <template>
 	<section>
 		<h2>Dynamic Styling</h2>
-		<div
-			class="box"
-			:class="boxAClasses"
-			@click="boxSelected('A')"
-		/>
+		<div class="box" :class="boxAClasses" @click="boxSelected('A')" />
 		<div
 			class="box"
 			:class="['anotherClass', boxBClasses]"
 			@click="boxSelected('B')"
 		/>
-		<div
-			class="box"
-			:class="boxCClasses"
-			@click="boxSelected('C')"
-		/>
+		<div class="box" :class="boxCClasses" @click="boxSelected('C')" />
 	</section>
 </template>
 

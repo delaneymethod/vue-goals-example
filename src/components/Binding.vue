@@ -5,8 +5,8 @@
 		<button v-on:click="incrementCounter">Increment Counter</button>
 		<p>Learn more <a :href="courseLink">about Vue</a></p>
 		<p>Counter {{ counter }}</p>
-		<input type="text" :value="name" v-on:input="setName"/>
-		<input type="text" v-model="surname"/>
+		<input type="text" :value="name" v-on:input="setName" />
+		<input type="text" v-model="surname" />
 		<button @click="resetName">Reset Name</button>
 		<p>Surname: {{ name }}</p>
 		<p>Full Name: {{ outputFullName }}</p>
@@ -29,8 +29,7 @@ export default {
 			return this.name;
 		}
 	},
-	beforeMount() {
-	},
+	beforeMount() {},
 	props: {},
 	data: () => ({
 		name: '',
@@ -64,5 +63,4 @@ export default {
 };
 </script>
 
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

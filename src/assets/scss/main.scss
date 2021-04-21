@@ -1,9 +1,11 @@
+@import "./_variables.scss";
+
 * {
 	box-sizing: border-box;
 }
 
 html {
-	font-family: 'Jost', sans-serif;
+	font-family: "Jost", sans-serif;
 }
 
 body {

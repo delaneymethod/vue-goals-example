@@ -2,13 +2,8 @@
 	<section>
 		<h2>Reactivity</h2>
 		<!--@input="saveInput"-->
-		<input
-			ref="userText"
-			type="text"
-		>
-		<button @click="setText">
-			Set Text
-		</button>
+		<input ref="userText" type="text" />
+		<button @click="setText">Set Text</button>
 		<p>{{ message }}</p>
 	</section>
 </template>
