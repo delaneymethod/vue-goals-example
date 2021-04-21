@@ -7,12 +7,14 @@
 				name="Manuel Lorenz"
 				phone="01234 5678 991"
 				email="manuel@localhost.com"
+				is-favorite="1"
 			/>
 			<Friend
 				id="julie"
 				name="Julie Lorenz"
 				phone="09876 543 22"
 				email="julie@localhost.com"
+				is-favorite="0"
 			/>
 		</ul>
 	</section>
