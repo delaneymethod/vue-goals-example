@@ -10,6 +10,7 @@
 			<li><strong>Email:</strong> {{ email }}</li>
 		</ul>
 		<button @click="deleteFriend">Delete</button>
+		<button @click="showAlert">Show Alert</button>
 	</li>
 </template>
 
@@ -30,7 +31,7 @@ export default {
 			default: false
 		}
 	},
-	inject: ['foobar'],
+	inject: ['foobar', 'showAlert'],
 	emits: {
 		'delete-friend': function (id) {
 			if (id) {
