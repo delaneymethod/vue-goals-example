@@ -1,22 +1,16 @@
 <template>
 	<div id="app">
-		<!--
-		<Binding />
-		<DynamicStyling />
-		<Goals />
-		<Reactivity />
-		-->
-		<Friends />
+		<Badges />
 	</div>
 </template>
 
 <script>
-import Friends from '@/components/Friends/Friends';
+import Badges from '@/components/Badges/Badges';
 
 export default {
 	name: 'App',
 	components: {
-		Friends
+		Badges
 	}
 };
 </script>
