@@ -1,6 +1,6 @@
 <template>
 	<li>
-		<h2>{{ name }} {{ friendIsFavorite ? '(Favorite)' : '' }}</h2>
+		<h2>{{ name }} {{ isFavorite ? '(Favorite)' : '' }}</h2>
 		<button @click="toggleDetails">
 			{{ detailsAreVisible ? 'Hide Details' : 'Show Details' }}
 		</button>
@@ -31,8 +31,7 @@ export default {
 	},
 	data() {
 		return {
-			detailsAreVisible: false,
-			friendIsFavorite: this.isFavorite
+			detailsAreVisible: false
 		};
 	},
 	methods: {
@@ -40,7 +39,7 @@ export default {
 			this.detailsAreVisible = !this.detailsAreVisible;
 		},
 		toggleFavorite() {
-			this.friendIsFavorite = !this.friendIsFavorite;
+			this.$emit('toggle-favorite', this.id);
 		}
 	}
 };
