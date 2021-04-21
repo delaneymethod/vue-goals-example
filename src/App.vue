@@ -17,22 +17,6 @@ export default {
 	name: 'App',
 	components: {
 		Friends
-	},
-	data() {
-		return {
-			foobar: 'Sean Delaney'
-		};
-	},
-	methods: {
-		showAlert() {
-			alert('Alert shown!');
-		}
-	},
-	provide() {
-		return {
-			foobar: this.foobar,
-			showAlert: this.showAlert
-		};
 	}
 };
 </script>

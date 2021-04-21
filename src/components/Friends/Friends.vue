@@ -28,8 +28,15 @@ export default {
 		Friend,
 		NewFriend
 	},
+	provide() {
+		return {
+			foobar: this.foobar,
+			showAlert: this.showAlert
+		};
+	},
 	data() {
 		return {
+			foobar: 'Sean Delaney',
 			friends: [
 				{
 					id: Math.random(),
@@ -49,6 +56,9 @@ export default {
 		};
 	},
 	methods: {
+		showAlert() {
+			alert('Show Alert worked!');
+		},
 		toggleFavorite(friendId) {
 			const friend = this.friends.find((friend) => friend.id === friendId);
 
