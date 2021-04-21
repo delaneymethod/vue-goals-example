@@ -17,6 +17,16 @@ export default {
 	name: 'App',
 	components: {
 		Friends
+	},
+	data() {
+		return {
+			foobar: 'Sean Delaney'
+		};
+	},
+	provide() {
+		return {
+			foobar: this.foobar
+		};
 	}
 };
 </script>

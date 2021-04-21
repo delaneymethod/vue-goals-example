@@ -1,6 +1,6 @@
 <template>
 	<li>
-		<h2>{{ name }} {{ isFavorite ? '(Favorite)' : '' }}</h2>
+		<h2>{{ name }} ({{ foobar }}) {{ isFavorite ? '(Favorite)' : '' }}</h2>
 		<button @click="toggleDetails">
 			{{ detailsAreVisible ? 'Hide Details' : 'Show Details' }}
 		</button>
@@ -17,7 +17,7 @@
 export default {
 	name: 'Friend',
 	props: {
-		id: String,
+		id: Number,
 		name: {
 			type: String,
 			required: true
@@ -30,6 +30,7 @@ export default {
 			default: false
 		}
 	},
+	inject: ['foobar'],
 	emits: {
 		'delete-friend': function (id) {
 			if (id) {
