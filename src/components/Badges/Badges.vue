@@ -28,7 +28,7 @@
 <script>
 import ActiveGoals from '@/components/Badges/ActiveGoals';
 import ManageGoals from '@/components/Badges/ManageGoals';
-import TheHeader from '@/components/Badges/TheHeader';
+import TheHeader from '@/components/Badges/Layout/TheHeader';
 /*
 import BadgeList from '@/components/Badges/BadgeList';
 import UserInfo from '@/components/Badges/UserInfo';

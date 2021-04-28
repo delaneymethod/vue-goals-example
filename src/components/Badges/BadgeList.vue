@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import BaseCard from '@/components/Badges/BaseCard';
-import BaseBadge from '@/components/Badges/BaseBadge';
+import BaseCard from '@/components/Badges/UI/BaseCard';
+import BaseBadge from '@/components/Badges/UI/BaseBadge';
 
 export default {
 	name: 'BadgeList',
